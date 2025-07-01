@@ -23,8 +23,12 @@
     </article>
   </main>
 
-  <footer>
+ <footer>
     <p>© 2025 Daily ATC 24 News</p>
+    <a href="https://discord.gg/2zvSr9xUT7" target="_blank" class="discord-btn">
+      
+      Join our Discord
+    </a>
   </footer>
 </body>
-</html> 
+</html>
