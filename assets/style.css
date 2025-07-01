@@ -105,4 +105,18 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
-/*uhh i hope this image thingy works/
+/*uhh i hope this image thingy works*/
+.discord-btn {
+    display: inline-block;
+    background: #5865F2;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 0.5em;
+    transition: background 0.2s;
+}
+.discord-btn:hover {
+    background: #4752c4;
+}
