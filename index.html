@@ -20,6 +20,42 @@
    <img src="assets\images\logo.png" alt="Coming Soon" class="article-image" />
       <p>📅 Posted July 1, 2025 — We are currently working on the website. Stay tuned for updates!</p>
       <p><strong>Author:</strong> ATC24 Newsroom</p>
+      <div id="countdown" style="font-size:1.2rem; font-weight:bold; margin:1em 0;"></div>
+
+<script>
+// Set the target time to 23:00 today (local time)
+function getTargetTime() {
+    const now = new Date();
+    const target = new Date();
+    target.setHours(23, 0, 0, 0);
+    // If it's already past 23:00, set for tomorrow
+    if (now > target) {
+        target.setDate(target.getDate() + 1);
+    }
+    return target;
+}
+
+function updateCountdown() {
+    const now = new Date();
+    const target = getTargetTime();
+    const diff = target - now;
+
+    if (diff <= 0) {
+        document.getElementById('countdown').textContent = "It's 23:00!";
+        return;
+    }
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('countdown').textContent =
+        `Countdown: ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
     </article>
 
     
