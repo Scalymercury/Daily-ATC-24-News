@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article Title Here</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛫 Daily ATC 24 News</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Article Title Here</h2>
+      <img src="assets\images\go Wy.png" alt="Description of image" class="article-image" />
+      <p>Article content goes here...</p>
+      <p><strong>Author:</strong> Your Name</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Daily ATC 24 News</p>
+  </footer>
+</body>
+</html> 

@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1 0 auto;
+}
+
+article {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s;
+}
+
+article:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+article h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+article h2 a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+article h2 a:hover {
+    color: #0059b3;
+    text-decoration: underline;
+}
+
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 0.5rem;
+    }
+    article {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+}
+
+.article-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+/*uhh i hope this image thingy works/
