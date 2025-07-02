@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATC24 News</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #232946;
+      --background: #181c24;
+      --card-bg: #232946;
+      --accent: #8bd3dd;
+      --text: #f4f6fa;
+      --muted: #b8c1ec;
+      --radius: 18px;
+      --shadow: 0 4px 24px rgba(20,20,40,0.13);
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--primary);
+      color: var(--accent);
+      padding: 2rem 0 1.2rem 0;
+      box-shadow: var(--shadow);
+      text-align: center;
+      border-bottom: 1px solid #2a2d3a;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    nav {
+      margin-top: 0.7rem;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 1.2rem;
+      font-size: 1.15rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 2.5rem auto 0 auto;
+      padding: 0 1.2rem 6rem 1.2rem;
+    }
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    article {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem 2rem 1.5rem 2rem;
+      transition: box-shadow 0.2s, background 0.2s;
+      position: relative;
+      border: 1px solid #2a2d3a;
+    }
+    article:hover {
+      box-shadow: 0 8px 32px rgba(20,20,40,0.18);
+      background: #20243a;
+    }
+    article h2 {
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+    }
+    article h2 a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    article h2 a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+    }
+    .meta .emoji {
+      font-size: 1.1em;
+    }
+    article p {
+      font-size: 1.13rem;
+      line-height: 1.7;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+    .discord-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 0.7em 1.5em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 0.7em;
+      transition: background 0.2s, color 0.2s;
+      font-size: 1.08rem;
+      box-shadow: 0 2px 8px rgba(88,101,242,0.07);
+      border: none;
+    }
+    .discord-btn:hover {
+      background: #fff;
+      color: var(--primary);
+    }
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: var(--primary);
+      color: var(--accent);
+      text-align: center;
+      padding: 1.2rem 0 1.2rem 0;
+      font-size: 1.08rem;
+      letter-spacing: 0.5px;
+      z-index: 100;
+      box-shadow: 0 -2px 12px rgba(20,20,40,0.07);
+      border-top: 1px solid #2a2d3a;
+    }
+    @media (max-width: 700px) {
+      main {
+        max-width: 100%;
+        padding: 0 0.5rem 6rem 0.5rem;
+      }
+      article {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+      }
+      header h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛫 Daily ATC 24 News</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://discord.gg/2zvSr9xUT7" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article-list">
+      <article>
+        <h2><a href="articles/pollresults.html">📢 ATC24 VOTE: "CENTER" EDGES OUT "CONTROL" TO BECOME MANDATED ENROUTE CALLSIGN</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted July 1, 2025 — <span class="emoji">📊</span> Final Results</div>
+        <p>Center: 52% (572 votes) — Control: 48% (527 votes). "Center" is now the official enroute callsign for all ATC24 stations. <span class="emoji">🎉</span></p>
+      </article>
+      <article>
+        <h2><a href="articles/article2.html">Controlling the Callsign | Live Updates 📉</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted July 1, 2025 — <span class="emoji">⏰</span> 3 hours left</div>
+        <p>With only 3 hours left in the vote, an early victory may be in store for Center...</p>
+      </article>
+      <article>
+        <h2><a href="articles/Liveupdate.html">Controlling the Callsign | Live Updates 📉</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted July 1, 2025 — <span class="emoji">⏰</span> Gap closes, Control only 16 votes below...</div>
+        <p>Earlier today we saw the gap close, with “Control” only 16 votes below “Center”...</p>
+      </article>
+      <article>
+        <h2><a href="articles/unexpectedtwist.html">Center Overtakes Control! — Live Vote Update 📉</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted July 1, 2025 — <span class="emoji">📣</span> The enroute callsign vote just flipped...</div>
+        <p>The enroute callsign vote just flipped — “Center” has now overtaken “Control” for the first time since the poll opened!</p>
+      </article>
+      <article>
+        <h2><a href="articles/atc24enroutecallsignvote.html">Center Overtakes Control! — Live Vote Update 📉</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted July 1, 2025 — Center has just overtaken Control as the US wakes up...</div>
+        <p>Center has just overtaken Control as the US wakes up...</p>
+      </article>
+      <article>
+        <h2><a href="articles/ownersings.html">Beloved ATC24 Server Owner Sings “O Canada” and Hosts Pseudo QnA</a></h2>
+        <div class="meta"><span class="emoji">📅</span> Posted June 30, 2025 — <span class="emoji">🎤</span> Treelon sings O Canada</div>
+        <p>A lovely moment that has the entire ATC24 family smiling...</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 Daily ATC 24 News</span>
+    <br>
+    <a href="https://discord.gg/2zvSr9xUT7" target="_blank" class="discord-btn">Join our Discord</a>
+  </footer>
+</body>

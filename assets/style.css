@@ -4,8 +4,8 @@ html, body {
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8fafc;
-    color: #222;
+    background: #181c24; 
+    color: #f4f6fa;      
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    background: #003366;
-    color: #fff;
+    background: #232946; 
+    color: #8bd3dd;      
     padding: 1.5rem 0 1rem 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -28,7 +28,7 @@ header h1 {
 }
 
 nav a {
-    color: #fff;
+    color: #8bd3dd; 
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 500;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: #fff; 
 }
 
 main {
@@ -47,16 +47,16 @@ main {
 }
 
 article {
-    background: #fff;
+    background: #232946; 
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(20,20,40,0.13); 
     margin-bottom: 2rem;
     padding: 1.5rem;
     transition: box-shadow 0.2s;
 }
 
 article:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(20,20,40,0.18); 
 }
 
 article h2 {
@@ -65,19 +65,19 @@ article h2 {
 }
 
 article h2 a {
-    color: #003366;
+    color: #8bd3dd; 
     text-decoration: none;
     transition: color 0.2s;
 }
 
 article h2 a:hover {
-    color: #0059b3;
+    color: #fff; 
     text-decoration: underline;
 }
 
 footer {
-    background: #003366;
-    color: #fff;
+    background: #232946; 
+    color: #8bd3dd;      
     text-align: center;
     padding: 1rem 0;
     font-size: 0.95rem;
@@ -108,25 +108,26 @@ footer {
 /*uhh i hope this image thingy works*/
 .discord-btn {
     display: inline-block;
-    background: #5865F2;
-    color: #fff;
+    background: #8bd3dd; 
+    color: #232946;      
     padding: 0.5em 1em;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
     margin-top: 0.5em;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
 }
 .discord-btn:hover {
-    background: #4752c4;
+    background: #fff;    
+    color: #232946;      
 }
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #003366;
-    color: #fff;
+    background: #232946; 
+    color: #8bd3dd;      
     text-align: center;
     padding: 1rem 0;
     font-size: 0.95rem;
@@ -135,8 +136,8 @@ footer {
 }
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f0f2f5; 
-    color: #222;
+    background: #181c24; 
+    color: #f4f6fa;      
     margin: 0;
     padding: 0;
     min-height: 100vh;
